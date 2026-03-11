@@ -23,6 +23,12 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("screensaver")]
+    public IActionResult Screensaver()
+    {
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
