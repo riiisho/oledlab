@@ -25,10 +25,71 @@ body {
 }
 
 main {
-  min-height: calc(100dvh - 53px);
+  min-height: calc(100dvh - 71px - 53px);
 }
 
 a {
   color: var(--text-emphasis);
   text-decoration: none;
+}
+
+/* ── Floating nav ── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-brand {
+  corner-shape: round;
+  color: var(--text-muted);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.1s ease;
+}
+
+.nav-tools {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-wrap: nowrap;
+}
+
+.nav-tools > li:first-child > a {
+  border-radius: 1rem 0 1rem 1rem;
+  corner-shape: round bevel bevel round;
+  z-index: 1;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.nav-tools > li:last-child > a {
+  border-radius: 1rem 1rem 1rem 0;
+  corner-shape: bevel round round bevel;
+  z-index: 1;
+  padding-right: 1rem;
+  margin: 0;
+}
+
+.nav-tools > li > a {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  color: var(--text-muted);
+  corner-shape: bevel round;
+  border-radius: 1rem 0 / 3rem 0;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  margin: 0 -1rem;
+  z-index: 3;
+  transition: background-color 0.1s ease;
+}
+
+.nav-tools > li > a:hover, .nav-tools > li > a:focus, .nav-brand:hover, .nav-brand:focus {
+  background-color: var(--bg-light);
 }
