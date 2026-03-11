@@ -8,7 +8,7 @@
       "args": [
         "watch",
         "--project",
-        "${workspaceFolder}/GlowLab.Web/GlowLab.Web.csproj"
+        "${workspaceFolder}/Web/Web.csproj"
       ],
       "problemMatcher": "$msCompile",
       "isBackground": true,
