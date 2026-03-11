@@ -99,8 +99,7 @@ a {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: oklch(0.5 0 0);
-  mix-blend-mode: difference;
+  color: var(--text-muted);
 }
 
 .burn-in-swatches {
