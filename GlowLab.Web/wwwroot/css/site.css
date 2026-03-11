@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  min-height: calc(100dvh - 71px - 53px);
+  min-height: calc(100dvh - 85px - 53px);
 }
 
 a {
@@ -34,11 +34,20 @@ a {
 }
 
 /* ── Floating nav ── */
+header, footer {
+  transition: opacity 0.3s ease;
+}
+
+header.hidden, footer.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
